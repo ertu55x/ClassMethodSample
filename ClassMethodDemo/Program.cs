@@ -38,6 +38,8 @@ namespace ClassMethodDemo
             Console.WriteLine("------------------------");
             musteriManager.Silme(musteri3);
 
+
+
             Console.ReadKey();
         }
     }
