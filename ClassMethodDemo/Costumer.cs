@@ -4,11 +4,11 @@ using System.Text;
 
 namespace ClassMethodDemo
 {
-    class Musteri
+    class Costumer
     {
         public int Id { get; set; }
-        public string Adi { get; set; }
-        public string Soyadi { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
     }
 }

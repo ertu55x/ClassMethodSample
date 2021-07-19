@@ -6,37 +6,37 @@ namespace ClassMethodDemo
     {
         static void Main(string[] args)
         {
-            Musteri musteri1 = new Musteri();
-            musteri1.Id = 55;
-            musteri1.Adi = "Ertuğ";
-            musteri1.Soyadi = "Gül";
+            Costumer costumer1 = new Costumer();
+            costumer1.Id = 55;
+            costumer1.FirstName = "Ertuğ";
+            costumer1.LastName = "Gül";
 
-            Musteri musteri2 = new Musteri();
-            musteri2.Id = 34;
-            musteri2.Adi = "Ertuğrul";
-            musteri2.Soyadi = "Güllüoğlu";
+            Costumer costumer2 = new Costumer();
+            costumer2.Id = 34;
+            costumer2.FirstName = "Ertuğrul";
+            costumer2.LastName = "Güllüoğlu";
 
-            Musteri musteri3 = new Musteri();
-            musteri3.Id = 54;
-            musteri3.Adi = "Ertan";
-            musteri3.Soyadi = "Güllü";
+            Costumer costumer3 = new Costumer();
+            costumer3.Id = 54;
+            costumer3.FirstName = "Ertan";
+            costumer3.LastName = "Güllü";
 
-            Musteri[] musteriler = new Musteri[] { musteri1, musteri2, musteri3 };
+            Costumer[] costumers = new Costumer[] { costumer1, costumer2, costumer3 };
 
-            foreach (Musteri musteri in musteriler)
+            foreach (Costumer costumer in costumers)
             {
-                Console.WriteLine(musteri.Adi + " " + " => " + musteri.Soyadi + " " + "=>" + " " + musteri.Id);
+                Console.WriteLine(costumer.FirstName + " " + " => " + costumer.LastName + " " + "=>" + " " + costumer.Id);
             }
             Console.WriteLine("------------------------");
-            MusteriManager musteriManager = new MusteriManager();
-            musteriManager.Listeleme(musteri1);
-            musteriManager.Listeleme(musteri2);
-            musteriManager.Listeleme(musteri3);
+            CostumerManager musteriManager = new CostumerManager();
+            musteriManager.Listeleme(costumer1);
+            musteriManager.Listeleme(costumer2);
+            musteriManager.Listeleme(costumer3);
             Console.WriteLine("Müşteriler Listelendi");
             Console.WriteLine("------------------------");
-            musteriManager.Ekleme(musteri1);
+            musteriManager.Ekleme(costumer1);
             Console.WriteLine("------------------------");
-            musteriManager.Silme(musteri3);
+            musteriManager.Silme(costumer3);
 
             Console.ReadKey();
         }
