@@ -29,14 +29,14 @@ namespace ClassMethodDemo
             }
             Console.WriteLine("------------------------");
             CostumerManager musteriManager = new CostumerManager();
-            musteriManager.Listeleme(costumer1);
-            musteriManager.Listeleme(costumer2);
-            musteriManager.Listeleme(costumer3);
+            musteriManager.Read(costumer1);
+            musteriManager.Read(costumer2);
+            musteriManager.Read(costumer3);
             Console.WriteLine("Müşteriler Listelendi");
             Console.WriteLine("------------------------");
-            musteriManager.Ekleme(costumer1);
+            musteriManager.Add(costumer1);
             Console.WriteLine("------------------------");
-            musteriManager.Silme(costumer3);
+            musteriManager.Delete(costumer3);
 
             Console.ReadKey();
         }

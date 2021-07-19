@@ -6,18 +6,18 @@ namespace ClassMethodDemo
 {
     class CostumerManager
     {
-        public void Ekleme(Costumer costumer)
+        public void Add(Costumer costumer)
         {
             Console.WriteLine(costumer.FirstName + " " + costumer.LastName + " " + costumer.Id);
             Console.WriteLine("Müşteri Eklendi!");
         }
 
-        public void Listeleme(Costumer costumer)
+        public void Read(Costumer costumer)
         {
             Console.WriteLine(costumer.FirstName + " " + costumer.LastName + " " + costumer.Id);
         }
 
-        public void Silme(Costumer costumer)
+        public void Delete(Costumer costumer)
         {
             Console.WriteLine(costumer.FirstName + " " + costumer.LastName + " " + costumer.Id);
             Console.WriteLine("Müşteri Silindi.");
